@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="설정">
+        <EditTextPreference app:title="측정 주기" app:key="dt" android:defaultValue="60000" />
+        <MultiSelectListPreference
+            app:title="알림창 표시 항목"
+            app:key="notiVals"
+            app:entries="@array/noti_entrys"
+            app:entryValues="@array/noti_values" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
